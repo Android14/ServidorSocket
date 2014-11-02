@@ -30,7 +30,7 @@ public class Controlador implements ReceiveListener {
                 String[] Param = e.Dato.getDato().split(",");
                 int a = Integer.parseInt(Param[1]);
                 int b = Integer.parseInt(Param[2]);
-                int r = a+b;
+                int r = a+b+a+a+b+a;
                 server.enviar(e.Dato.getIP(),String.valueOf(r));
             }
             
